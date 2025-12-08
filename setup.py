@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="zdb",
+    name="zDataBase",
     version="0.1",
     author="seyyed mohamad hosein moosavi raja(01)",
     author_email="mohamadhosein159159@gmail.com",
