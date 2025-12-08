@@ -30,5 +30,6 @@ ZDB یک دیتابیس **Key-Value ساده و سبک** با استفاده ا�
 `sqlite3`, `json`, `threading`, `os`, `shutil` و غیره.  
 
 ```bash
-pip install zdb
+pip install zDataBase
+
 ```
