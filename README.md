@@ -96,6 +96,26 @@ users.model_save(user, key="user123") # ذخیره شی در دیتابیس با
 users.close() # بستن دیتابیس برای آزادس سازی منابع
 ```
 
+### بارگذاری مجدد مدل
+```python
+from zDataBase import DataBase, Model
+
+class UserModel(Model): # مدل 
+    age: int
+    name: str
+    last_name: str
+
+users = DataBase("users") # دیتابیس 
+
+users.register_model(UserModel) # ثبت مدل برای دیتابیس
+
+user = db.model_get(User,"user123") # گرفتن مقدار مدل 
+
+print(user.to_dict()) # تبدیل به دیکشنری برای خواندن 
+
+users.close() # بستن دیتابیس 
+```
+
 ## سایر متود ها
 
 <li>save() - ذخیره دیتابیس به صورت دستی</li>
